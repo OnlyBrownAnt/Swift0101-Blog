@@ -70,12 +70,13 @@ System.out.println(c1.getName());
 ```
 #### 常用方法
 > 可以先了解反射库之后再阅读这部分
+
 | 方法 | 描述 |
 | --- | --- |
-| Class\<?> forName(String className) | 静态方法，返回与具有给定字符串名称的类或接口关联的 Class 对象 |
-| Constructor\<T> getConstructor(Class<?>... parameterTypes) | 返回一个Constructor对象，该对象反映由此类对象表示的类的指定公共构造函数。如果参数类型是基本数据类型，可以使用T.class的方式，方法在使用时会进行自动装箱。|
-| Method getMethod(String name, Class<?>... parameterTypes) | 返回一个 Method 对象，该对象反映由此类对象表示的类或接口的指定公共成员方法 |
-| Method getDeclaredMethod(String name, Class<?>... parameterTypes) | 返回一个 Method 对象，该对象反映由此类对象表示的类或接口的指定声明方法 |
+| Class\<?\> forName(String className) | 静态方法，返回与具有给定字符串名称的类或接口关联的 Class 对象 |
+| Constructor\<T\> getConstructor(Class\<?\>... parameterTypes) | 返回一个Constructor对象，该对象反映由此类对象表示的类的指定公共构造函数。如果参数类型是基本数据类型，可以使用T.class的方式，方法在使用时会进行自动装箱。|
+| Method getMethod(String name, Class\<\?\>... parameterTypes) | 返回一个 Method 对象，该对象反映由此类对象表示的类或接口的指定公共成员方法 |
+| Method getDeclaredMethod(String name, Class\<?\>... parameterTypes) | 返回一个 Method 对象，该对象反映由此类对象表示的类或接口的指定声明方法 |
 | Method[] getMethods() throws SecurityException | 返回一个数组，其中包含一个数组，该对象反映由此类对象表示的类或接口的所有公共方法，包括由类或接口声明的方法以及从超类和超接口继承的方法。 |
 | Field getField(String name) | 返回一个 Field 对象，该对象反映由此类对象表示的类或接口的指定公共成员字段 |
 | Field getDeclaredField(String name) | 返回一个 Field 对象，该对象反映由此类对象表示的类或接口的指定声明字段 |
