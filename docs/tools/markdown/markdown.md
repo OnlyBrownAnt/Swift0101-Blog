@@ -5,7 +5,7 @@
 
 [Markdown](https://zh.wikipedia.org/wiki/Markdown)是一种轻量型的标记语言，通过Markdown我们可以使用相对简单的语法和便捷的方式来实现更容易被阅读的效果，而且支持更方便的解析成网页文档进行互联网分享。目前主流的博客网站比如知乎、CSDN、掘金等基本都支持该语言的文档编写。而关于技术博客或者文档编写，GitHub、GitBook等更是将其作为首选语言。
 
-这里的介绍主要是[CommonMark Spec](https://spec.commonmark.org/)。因为Markdown在发展过程中出现了很多的规范，[MultiMarkdown、GitHub Flavored Markdown (GFM)、Pandoc、CommonMark及Markdown等变体](https://zh.wikipedia.org/wiki/Markdown)。目前主流使用的是[CommonMark Spec](https://spec.commonmark.org/)和GitHub的[GitHub Flavored Markdown (GFM)](https://github.github.com/gfm/)。而且其中GitHub Flavored Markdown (GFM)也是遵循早期的的CommonMark规范的，所以可以先了解较为基础的CommonMark规范。
+这里的介绍主要是[CommonMark Spec](https://spec.commonmark.org/)。因为Markdown在发展过程中出现了很多的规范，[MultiMarkdown、GitHub Flavored Markdown (GFM)、Pandoc、CommonMark及Markdown等变体](https://zh.wikipedia.org/wiki/Markdown)。目前主流使用的是[CommonMark Spec](https://spec.commonmark.org/)和GitHub的[GitHub Flavored Markdown (GFM)](https://github.github.com/gfm/)。而且其中GitHub Flavored Markdown (GFM)也是遵循早期的CommonMark规范的，所以可以先了解较为基础的CommonMark规范。
 
 > GitHub Repository: [CommonMark](https://github.com/commonmark/commonmark-spec)
 >
@@ -185,3 +185,6 @@ console.log('hello world!');
 展示效果:
 
 ![markdown图片链接alt](http://assets.brownant.top/markdown/image_1.JPG "markdown图片链接title")
+
+## 相关博客推荐
+["Markdown 教程" made by mrknight with ❤️](https://markdown.com.cn/basic-syntax/emphasis.html)
