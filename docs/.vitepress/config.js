@@ -58,7 +58,7 @@ export default {
             { text: '学习JAVA', link: '/server/java/learnJava'},
             { text: 'Java 多线程总结', link: '/server/java/javaThreads'},
             { text: 'Java Socket', link: '/server/java/JavaSocket'},
-            { text: 'Java XML', link: '/server/java/JavaSocket'},
+            { text: 'Java XML', link: '/server/java/JavaXML'},
             { text: 'Java JSON', link: '/server/java/JavaJSON'},
             { text: 'Java 枚举(Enum)', link: '/server/java/JavaEnum'},
             { text: 'Java 注解(Annotation)', link: '/server/java/JavaAnnotation'},
