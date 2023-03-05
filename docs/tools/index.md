@@ -8,13 +8,13 @@
 
 [你比你想象中还需要Markdown](./markdown/markdown)
 
-[服务器的购买和基本使用教程](./others//orderServer)
+[服务器的购买和基本使用教程](./others/orderServer)
 
 [IPad Tips 图书APP(iBook)](./others/IPadTips)
 
 [你对甘特图最开始的印象是什么](./others/ganttChart)
 
-[这是你想要的呼吸灯效果吗](./others//ESP32BreathingLights)
+[这是你想要的呼吸灯效果吗](./others/ESP32BreathingLights)
 
 [Git Operation timed out](./git/GitOperationTimedout)
 

@@ -20,13 +20,13 @@
 
 [更多](./server/index)
 ## 叮当猫的口袋 {#叮当猫的口袋}
-[服务器的购买和基本使用教程](./tools/others//orderServer)
+[服务器的购买和基本使用教程](./tools/others/orderServer)
 
 [IPad Tips 图书APP(iBook)](./tools/others/IPadTips)
 
 [你对甘特图最开始的印象是什么](./tools/others/ganttChart)
 
-[这是你想要的呼吸灯效果吗](./tools/others//ESP32BreathingLights)
+[这是你想要的呼吸灯效果吗](./tools/others/ESP32BreathingLights)
 
 [Git Operation timed out](./tools/git/GitOperationTimedout)
 
