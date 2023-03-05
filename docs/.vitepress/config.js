@@ -35,7 +35,7 @@ export default {
           collapsed: false,
           items: [
             { text: '你比你想象中还需要Markdown', link: '/tools/markdown/markdown' },
-            { text: 'SSH 实现免密登陆', link: '/tools/sshLoginWithoutPassword' },
+            { text: 'SSH 实现免密登陆', link: '/tools/git/sshLoginWithoutPassword' },
             { text: 'Postman Mock服务的基本使用教程', link: '/tools/postman/postmanMock' },
             { text: 'Docker快速内网部署YApi Mock服务平台', link: '/tools/yapi/yapi-1' },
             { text: 'JMeter的安装和简单使用', link: '/tools/jmeter/jmeterGuide' },
@@ -85,7 +85,7 @@ export default {
             { text: '这是你想要的呼吸灯效果吗', link: '/tools/others/ESP32BreathingLights' },
             { text: 'Git Operation timed out', link: '/tools/git/GitOperationTimedout' },
             { text: 'IDEA 注释模版设置', link: '/tools/idea/ideaTemplateSetting' },
-            { text: 'SSH 实现免密登陆', link: '/tools/sshLoginWithoutPassword' }
+            { text: 'SSH 实现免密登陆', link: '/tools/git/sshLoginWithoutPassword' }
           ]
         }
       ]
