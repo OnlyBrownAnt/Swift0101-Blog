@@ -12,80 +12,83 @@ export default {
     sidebar: {
       '/': [
         {
-          text: '后端',
+          text: '后端(Back-end)',
           collapsed: false,
           items: [
-            { text: 'Java 多线程总结', link: '/server/java/javaThreads'},
-            { text: 'Java Socket', link: '/server/java/JavaSocket'},
-            { text: '数据库-基础概念介绍', link: '/server/DB/dbBase'},
-            { text: 'Java 注解(Annotation)', link: '/server/java/JavaAnnotation'},
-            { text: 'Java 反射(reflect)', link: '/server/java/JavaReflect'},
-            { text: 'More', link: '/server/java/learnJava' },
+            { text: 'Java 多线程总结', link: '/Back-end/java/javaThreads'},
+            { text: 'Java Socket', link: '/Back-end/java/JavaSocket'},
+            { text: '数据库-基础概念介绍', link: '/Back-end/DB/dbBase'},
+            { text: 'Java 注解(Annotation)', link: '/Back-end/java/JavaAnnotation'},
+            { text: 'Java 反射(reflect)', link: '/Back-end/java/JavaReflect'},
+            { text: 'More', link: '/Back-end/java/learnJava' },
           ]
         },
         {
-          text: '前端',
+          text: '前端(Front-end)',
           collapsed: false,
           items: [
-            { text: 'More', link: '/web/index' }
+            { text: 'vant-list 无限触发加载问题', link: '/Front-end/vue/vant/vant-list' },
+            { text: 'More', link: '/Front-end/index' }
           ]
         },
         {
           text: '叮当猫的万能口袋',
           collapsed: false,
           items: [
-            { text: '你比你想象中还需要Markdown', link: '/tools/markdown/markdown' },
-            { text: 'SSH 实现免密登陆', link: '/tools/git/sshLoginWithoutPassword' },
-            { text: 'Postman Mock服务的基本使用教程', link: '/tools/postman/postmanMock' },
-            { text: 'Docker快速内网部署YApi Mock服务平台', link: '/tools/yapi/yapi-1' },
-            { text: 'JMeter的安装和简单使用', link: '/tools/jmeter/jmeterGuide' },
-            { text: 'More', link: '/tools/yapi/yapi-1' }
+            { text: '你比你想象中还需要Markdown', link: '/Extension-tools/markdown/markdown' },
+            { text: 'SSH 实现免密登陆', link: '/Extension-tools/git/sshLoginWithoutPassword' },
+            { text: 'Postman Mock服务的基本使用教程', link: '/Extension-tools/postman/postmanMock' },
+            { text: 'Docker快速内网部署YApi Mock服务平台', link: '/Extension-tools/yapi/yapi-1' },
+            { text: 'JMeter的安装和简单使用', link: '/Extension-tools/jmeter/jmeterGuide' },
+            { text: 'More', link: '/Extension-tools/yapi/yapi-1' }
           ]
         }
       ],
-      '/web/': [
+      '/Front-end/': [
         {
           text: '前端',
           collapsed: false,
-          items: []
+          items: [
+            { text: 'vant-list 无限触发加载问题', link: '/Front-end/vue/vant/vant-list' }
+          ]
         }
       ],
-      '/server/': [
+      '/Back-end/': [
         {
           text: '后端',
           collapsed: false,
           items: [
-            { text: '学习JAVA', link: '/server/java/learnJava'},
-            { text: 'Java 多线程总结', link: '/server/java/javaThreads'},
-            { text: 'Java Socket', link: '/server/java/JavaSocket'},
-            { text: 'Java XML', link: '/server/java/JavaXML'},
-            { text: 'Java JSON', link: '/server/java/JavaJSON'},
-            { text: 'Java 枚举(Enum)', link: '/server/java/JavaEnum'},
-            { text: 'Java 注解(Annotation)', link: '/server/java/JavaAnnotation'},
-            { text: 'Java 反射(reflect)', link: '/server/java/JavaReflect'},
-            { text: 'JAVA 多线程 转账Demo', link: '/server/java/javaThreadsTransferDemo'},
-            { text: '数据库-基础概念介绍', link: '/server/DB/dbBase'},
-            { text: 'MySQL Transactions', link: '/server/DB/MySqlTransactions'}
+            { text: '学习JAVA', link: '/Back-end/java/learnJava'},
+            { text: 'Java 多线程总结', link: '/Back-end/java/javaThreads'},
+            { text: 'Java Socket', link: '/Back-end/java/JavaSocket'},
+            { text: 'Java XML', link: '/Back-end/java/JavaXML'},
+            { text: 'Java JSON', link: '/Back-end/java/JavaJSON'},
+            { text: 'Java 枚举(Enum)', link: '/Back-end/java/JavaEnum'},
+            { text: 'Java 注解(Annotation)', link: '/Back-end/java/JavaAnnotation'},
+            { text: 'Java 反射(reflect)', link: '/Back-end/java/JavaReflect'},
+            { text: 'JAVA 多线程 转账Demo', link: '/Back-end/java/javaThreadsTransferDemo'},
+            { text: '数据库-基础概念介绍', link: '/Back-end/DB/dbBase'},
+            { text: 'MySQL Transactions', link: '/Back-end/DB/MySqlTransactions'}
           ]
         }
       ],
-      '/tools/': [
+      '/Extension-tools/': [
         {
           text: '叮当猫的万能口袋',
           collapsed: false,
           items: [
-            { text: 'Docker快速内网部署YApi Mock服务平台', link: '/tools/yapi/yapi-1' },
-            { text: 'Postman文档集', link: '/tools/postman/postmanMock' },
-            { text: 'Postman Mock服务的基本使用教程', link: '/tools/postman/postmanMock' },
-            { text: 'JMeter的安装和简单使用', link: '/tools/jmeter/jmeterGuide' },
-            { text: '你比你想象中还需要Markdown', link: '/tools/markdown/markdown' },
-            { text: '服务器的购买和基本使用教程', link: '/tools/others/orderServer' },
-            { text: 'IPad Tips 图书APP(iBook)', link: '/tools/others/IPadTips' },
-            { text: '你对甘特图最开始的印象是什么', link: '/tools/others/ganttChart' },
-            { text: '这是你想要的呼吸灯效果吗', link: '/tools/others/ESP32BreathingLights' },
-            { text: 'Git Operation timed out', link: '/tools/git/GitOperationTimedout' },
-            { text: 'IDEA 注释模版设置', link: '/tools/idea/ideaTemplateSetting' },
-            { text: 'SSH 实现免密登陆', link: '/tools/git/sshLoginWithoutPassword' }
+            { text: 'Docker快速内网部署YApi Mock服务平台', link: '/Extension-tools/yapi/yapi-1' },
+            { text: 'Postman文档集', link: '/Extension-tools/postman/postmanMock' },
+            { text: 'Postman Mock服务的基本使用教程', link: '/Extension-tools/postman/postmanMock' },
+            { text: 'JMeter的安装和简单使用', link: '/Extension-tools/jmeter/jmeterGuide' },
+            { text: '你比你想象中还需要Markdown', link: '/Extension-tools/markdown/markdown' },
+            { text: '服务器的购买和基本使用教程', link: '/Extension-tools/others/orderServer' },
+            { text: 'IPad Tips 图书APP(iBook)', link: '/Extension-tools/others/IPadTips' },
+            { text: '你对甘特图最开始的印象是什么', link: '/Extension-tools/others/ganttChart' },
+            { text: '这是你想要的呼吸灯效果吗', link: '/Extension-tools/others/ESP32BreathingLights' },
+            { text: 'Git Operation timed out', link: '/Extension-tools/git/GitOperationTimedout' },
+            { text: 'IDEA 注释模版设置', link: '/Extension-tools/idea/ideaTemplateSetting' },
+            { text: 'SSH 实现免密登陆', link: '/Extension-tools/git/sshLoginWithoutPassword' }
           ]
         }
       ]
