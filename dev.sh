@@ -14,6 +14,19 @@ then
   docker ps -a | grep docker-brownant > $PWD/docker/dockerInfo && \
   echo -e "end dev date: $(date +%y-%m-%d\ %H:%M:%S);\n" >> dev.log
 #
+elif [[ $1 == "rsd" ]]
+then
+  dockerId=$(sed -n 1p $PWD/docker/dockerInfo | cut -d " " -f1) && \
+  echo "start deploy again date: $(date +%y-%m-%d\ %H:%M:%S);" >> dev.log && \
+  docker stop $dockerId && \
+  git pull >> dev.log && \
+  npm run docs:build >> dev.log && \
+  rm -rf $PWD/docker/html/data/dist && \
+  mkdir -p $PWD/docker/html/data/ && \
+  mv $PWD/docs/.vitepress/dist $PWD/docker/html/data/ && \
+  docker start $dockerId && \
+  echo -e "end deploy again date: $(date +%y-%m-%d\ %H:%M:%S);\n" >> dev.log
+#
 elif [[ $1 == "cd" ]]
 then
   echo "start clear date: $(date +%y-%m-%d\ %H:%M:%S);" >> dev.log && \
@@ -47,9 +60,9 @@ then
 #
 elif [[ $1 == "-help" ]]
 then
-  echo -e "help:\n\$1=sd 开始部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker";
+  echo -e "help:\n\$1=sd 开始部署\$1=nrsd 更新新数据再次部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker\n\$1=cl 清理docker日志"
 #
 else 
   echo "please get some params!"
-  echo -e "help:\n\$1=sd 开始部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker";
+  echo -e "help:\n\$1=sd 开始部署\$1=nrsd 更新新数据再次部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker\n\$1=cl 清理docker日志"
 fi
