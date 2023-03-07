@@ -46,7 +46,7 @@ export default {
       ],
       '/Front-end/': [
         {
-          text: '前端',
+          text: '前端(Front-end)',
           collapsed: false,
           items: [
             { text: 'vant-list 无限触发加载问题', link: '/Front-end/vue/vant/vant-list' }
@@ -55,7 +55,7 @@ export default {
       ],
       '/Back-end/': [
         {
-          text: '后端',
+          text: '后端(Back-end)',
           collapsed: false,
           items: [
             { text: '学习JAVA', link: '/Back-end/java/learnJava'},

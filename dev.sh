@@ -41,9 +41,14 @@ then
   dockerId=$(sed -n 1p $PWD/docker/dockerInfo | cut -d " " -f1)
   docker stop $dockerId
 #
+elif [[ $1 == "cl" ]]
+then
+  rm -rf $PWD/docker/*.log && rm -rf $PWD/docker/dockerInfo
+#
 elif [[ $1 == "-help" ]]
 then
   echo -e "help:\n\$1=sd 开始部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker";
+#
 else 
   echo "please get some params!"
   echo -e "help:\n\$1=sd 开始部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker";
