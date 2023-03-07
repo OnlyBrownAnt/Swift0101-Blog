@@ -8,8 +8,8 @@ then
   npm install >> dev.log && \
   npm run docs:build >> dev.log && \
   rm -rf $PWD/docker/html/data/dist && \
-  mkdir -p $PWD/docker/html/data/dist && \
-  mv $PWD/docs/.vitepress/dist $PWD/docker/html/data/dist && \
+  mkdir -p $PWD/docker/html/data/ && \
+  mv $PWD/docs/.vitepress/dist $PWD/docker/html/data/ && \
   docker compose -f $PWD/docker/docker-compose.yml up -d && \
   docker ps -a | grep docker-brownant > $PWD/docker/dockerInfo && \
   echo -e "end dev date: $(date +%y-%m-%d\ %H:%M:%S);\n" >> dev.log
