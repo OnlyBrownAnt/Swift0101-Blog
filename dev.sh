@@ -60,9 +60,9 @@ then
 #
 elif [[ $1 == "-help" ]]
 then
-  echo -e "help:\n\$1=sd 开始部署\n\$1=nrsd 更新新数据再次部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker\n\$1=cl 清理docker日志"
+  echo -e "help:\n\$1=sd 开始部署\n\$1=rsd 更新新数据再次部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker\n\$1=cl 清理docker日志"
 #
 else 
   echo "please get some params!"
-  echo -e "help:\n\$1=sd 开始部署\n\$1=nrsd 更新新数据再次部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker\n\$1=cl 清理docker日志"
+  echo -e "help:\n\$1=sd 开始部署\n\$1=rsd 更新新数据再次部署\n\$1=cd 撤销部署(清理docker)\n\$1=a 分析日志\n\$1=start 启动docker\n\$1=stop 停止docker\n\$1=cl 清理docker日志"
 fi
