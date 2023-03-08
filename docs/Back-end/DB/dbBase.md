@@ -1,3 +1,5 @@
+[[toc]]
+
 # 数据库-基础概念介绍
 
 ### 数据库
@@ -74,10 +76,17 @@ SQL(Strutured Query Language)是一种可以操作关系型数据库(RDB)的语�
 
 ### 附录二
 [《数据库系统概念第六版》P323]()
+
 [关系模型-wikipedia](https://zh.wikipedia.org/wiki/%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B)
+
 [关系模式-百度百科](https://baike.baidu.com/item/%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%BC%8F)
+
 [数据库规范化-wikipedia](https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83%E5%8C%96)
+
 [第一范式-wikipedia](https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E6%AD%A3%E8%A6%8F%E5%8C%96)
+
 [第二范式-wikipedia](https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AD%A3%E8%A6%8F%E5%8C%96)
+
 [第三范式-wikipedia](https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%89%E6%AD%A3%E8%A6%8F%E5%8C%96)
+
 [数据库表-wikipedia](https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8)

@@ -1,3 +1,6 @@
+const anchor = require('markdown-it-anchor');
+import { tocPlugin } from '@mdit-vue/plugin-toc';
+
 export default {
   lang: 'zh',
   title: 'Swift0101 Blog',
@@ -5,6 +8,20 @@ export default {
   base: '/',
   lastUpdated: true,
   ignoreDeadLinks: true, // TODO 打包和运行时忽略md文档报错: Found dead link 
+  markdown: {
+    lineNumbers: true,
+    // options for markdown-it-anchor
+    // https://github.com/valeriangalliat/markdown-it-anchor#usage
+    anchor: {},
+    // options for @mdit-vue/plugin-toc
+    // https://github.com/mdit-vue/mdit-vue/tree/main/packages/plugin-toc#options
+    toc: { level: [1, 2, 3, 4, 5] },
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(require('markdown-it-anchor'))
+      md.use(tocPlugin)
+    }
+  },
   themeConfig: {
     algolia: {
       appId: '113ROSTJD8',
@@ -93,7 +110,10 @@ export default {
             { text: '这是你想要的呼吸灯效果吗', link: '/Extension-tools/others/ESP32BreathingLights' },
             { text: 'Git Operation timed out', link: '/Extension-tools/git/GitOperationTimedout' },
             { text: 'IDEA 注释模版设置', link: '/Extension-tools/idea/ideaTemplateSetting' },
-            { text: 'SSH 实现免密登陆', link: '/Extension-tools/git/sshLoginWithoutPassword' }
+            { text: 'SSH 实现免密登陆', link: '/Extension-tools/git/sshLoginWithoutPassword' },
+            { text: '剪辑总结', link: '/Extension-tools/montage/firstMontage'},
+            { text: 'FFmpeg', link: '/Extension-tools/FFmpeg'},
+            { text: '推荐工具集', link: '/Extension-tools/recommendedTools'}
           ]
         }
       ]
