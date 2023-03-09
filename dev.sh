@@ -20,6 +20,7 @@ then
   echo "start deploy again date: $(date +%y-%m-%d\ %H:%M:%S);" >> dev.log && \
   docker stop $dockerId && \
   git pull >> dev.log && \
+  npm install && \
   npm run docs:build >> dev.log && \
   rm -rf $PWD/docker/html/data/dist && \
   mkdir -p $PWD/docker/html/data/ && \
