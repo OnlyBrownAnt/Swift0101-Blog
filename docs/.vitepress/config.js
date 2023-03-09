@@ -1,5 +1,4 @@
 const anchor = require('markdown-it-anchor');
-import { tocPlugin } from '@mdit-vue/plugin-toc';
 
 export default {
   lang: 'zh',
@@ -15,11 +14,10 @@ export default {
     anchor: {},
     // options for @mdit-vue/plugin-toc
     // https://github.com/mdit-vue/mdit-vue/tree/main/packages/plugin-toc#options
-    toc: { level: [1, 2, 3, 4, 5] },
+    toc: { level: [2, 3, 4, 5, 6] },
     config: (md) => {
       // use more markdown-it plugins!
       md.use(require('markdown-it-anchor'))
-      md.use(tocPlugin)
     }
   },
   themeConfig: {
